@@ -16,9 +16,6 @@ The following API endpoints are available:
 <br>`PUT /api/v1/tasks/{id}/` - update task information (only owner or assignee).
 <br>`PATCH /api/v1/tasks/{id}/` - partially update task information (only owner or assignee).
 <br>`DELETE /api/v1/tasks/{id}/ `- delete a task (only owner).
-<br>`POST /api/v1/tasks/{id}/complete/` - mark a task as completed (only owner or assignee).
-<br>`POST /api/v1/tasks/{id}/incomplete/` - mark a task as incomplete (only owner or assignee).
-<br>`POST /api/v1/tasks/{id}/delegate/` - delegate a task to another user (only owner or assignee).
 
 ### Users
 `GET /api/v1/users/` - retrieve all users (any authenticated user).
@@ -87,7 +84,7 @@ Show all users
 Create new task
 ![](images/5_task_create.png)
 
-Mark the task completed (body is empty)
+Mark the task completed
 ![](images/6_task_complete.png)
 
 Delegate the task to another user
