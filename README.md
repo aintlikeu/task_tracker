@@ -92,3 +92,9 @@ Delegate the task to another user
 
 Show all tasks
 ![](images/8_task_show_all.png)
+
+## Testing
+The project includes tests for all apps using the pytest library. To run the tests, activate the virtual environment and run:
+```
+pytest
+```
