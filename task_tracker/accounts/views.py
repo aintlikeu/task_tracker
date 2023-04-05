@@ -2,11 +2,9 @@ from django.contrib.auth.password_validation import validate_password
 from django.core.exceptions import ValidationError
 from rest_framework import status
 from rest_framework.decorators import action
-
 from rest_framework.permissions import AllowAny, IsAuthenticated, IsAdminUser
 from rest_framework.response import Response
 from rest_framework.viewsets import ModelViewSet
-
 from accounts.models import CustomUser
 from accounts.serializers import CustomUserSerializer
 from accounts.permissions import IsAdminOrOwner
