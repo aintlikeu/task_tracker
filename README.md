@@ -98,6 +98,10 @@ The project includes tests for all apps using the pytest library. To run the tes
 ```
 pytest
 ```
+If you use docker (for docker-compose use 'tasktracker-django' as <container_name>)
+```
+docker exec -it <container_name> pytest
+```
 
 ## Some examples via Postman
 ### Authorization
