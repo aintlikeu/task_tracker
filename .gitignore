@@ -1,5 +1,10 @@
 venv/
 .idea
 .todo
+
 task_tracker/db.sqlite3
 task_tracker/config.yaml
+
+.pytest_cache/
+__pycache__/
+.DS_Store

@@ -24,7 +24,7 @@ The following API endpoints are available:
 <br>`DELETE /api/v1/users/{id}/` - delete a user (only admin or the user himself).
 <br>`POST /api/v1/users/change_password/` - change a user's password (any authenticated user).
 
-## Installation
+## Installation from source
 
 To run this application locally, follow these steps:
 
@@ -59,6 +59,32 @@ python manage.py runserver
 ```
 The server will be available at http://127.0.0.1:8000/.
 
+## Installation using docker
+Pull the latest version from the Docker Hub
+```
+docker pull aintlikeu/tasktracker:latest
+```
+Once the image is downloaded, you can run the app using the following command:
+```
+docker run -p 8000:8000 aintlikeu/tasktracker
+```
+## Installation using docker-compose
+Download or create a docker-compose.yml file with the following contents:
+```
+version: "3"
+
+services:
+  app:
+    build: .
+    image: aintlikeu/tasktracker:latest
+    ports:
+      - "8000:8000"
+```
+Run the following command in the same directory:
+```
+docker-compose up
+```
+The server will be available at http://127.0.0.1:8000/.
 
 ## Usage
 You can use the API endpoints mentioned above to create and manage tasks and users.
@@ -66,6 +92,12 @@ Before accessing the authenticated endpoints, you need to obtain a JWT token by 
 
 For example:
 `Authorization: Bearer <your-token-here>`
+
+## Testing
+The project includes tests for all apps using the pytest library. To run the tests, activate the virtual environment and run:
+```
+pytest
+```
 
 ## Some examples via Postman
 ### Authorization
@@ -92,9 +124,3 @@ Delegate the task to another user
 
 Show all tasks
 ![](images/8_task_show_all.png)
-
-## Testing
-The project includes tests for all apps using the pytest library. To run the tests, activate the virtual environment and run:
-```
-pytest
-```

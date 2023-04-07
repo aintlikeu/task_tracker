@@ -1,0 +1,35 @@
+# Ignore all possible .DS_Store files
+**/.DS_Store
+
+# Ignore all files for git
+.git
+images/
+.gitignore
+
+# Ignore the .idea directory and its contents
+.idea/
+
+# Ignore the .pytest_cache directory and its contents
+**/.pytest_cache
+
+# Ignore the .todo file
+.todo
+
+# Ignore the venv directory and its contents
+venv/
+
+# Ignore the db.sqlite3 file
+task_tracker/db.sqlite3
+
+# Ignore the __pycache__ directory and its contents
+**/__pycache__
+
+# Ignore all *.pyc files
+**/*.pyc
+
+# Ignore the Dockerfile and docker-compose.yml
+Dockerfile
+docker-compose.yml
+
+# Ignore the config.yaml file
+task_tracker/config.yaml
