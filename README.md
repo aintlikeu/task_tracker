@@ -30,7 +30,7 @@ To run this application locally, follow these steps:
 
 Clone this repository:
 ```
-git clone https://github.com/razzzzzr/task_tracker
+git clone https://github.com/aintlikeu/task_tracker
 ```
 Create a virtual environment and install the project dependencies:
 ```
